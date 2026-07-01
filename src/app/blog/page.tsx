@@ -1,5 +1,5 @@
-// src/app/blog/page.tsx → URL: /blog
-// 博客列表页
+import Link from "next/link"
+
 export default function BlogPage() {
   const posts = [
     { slug: "hello-world", title: "Hello World" },
@@ -13,11 +13,10 @@ export default function BlogPage() {
       <ul>
         {posts.map(post => (
           <li key={post.slug}>
-            <a href={`/blog/${post.slug}`}>{post.title}</a>
+            <Link href={`/blog/${post.slug}`}>{post.title}</Link>
           </li>
         ))}
       </ul>
-      <a href="/">← Home</a>
     </div>
   )
 }

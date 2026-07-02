@@ -1,9 +1,13 @@
-// 故意随机抛出错误，演示 error.tsx 的效果
+"use client"
 
-export default async function ErrorDemoPage() {
-  // 50% 概率抛错
-  if (Math.random() > 0.5) {
-    throw new Error("Random server error! Refresh to try again.")
+import { useState } from "react"
+
+// 改为 Client Component — 构建时不执行，不会阻断 build
+export default function ErrorDemoPage() {
+  const [shouldError] = useState(() => Math.random() > 0.5)
+
+  if (shouldError) {
+    throw new Error("Random client error! Click 'Try again' to retry.")
   }
 
   return (

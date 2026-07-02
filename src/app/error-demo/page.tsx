@@ -1,14 +1,24 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
-// 改为 Client Component — 构建时不执行，不会阻断 build
+// 用 useEffect 触发错误 — useEffect 只在浏览器运行，构建时不执行
 export default function ErrorDemoPage() {
-  const [shouldError] = useState(() => Math.random() > 0.5)
+  const [shouldError, setShouldError] = useState(false)
+  const [checked, setChecked] = useState(false)
+
+  useEffect(() => {
+    if (Math.random() > 0.5) {
+      setShouldError(true)
+    }
+    setChecked(true)
+  }, [])
 
   if (shouldError) {
     throw new Error("Random client error! Click 'Try again' to retry.")
   }
+
+  if (!checked) return <p>Loading...</p>
 
   return (
     <div>

@@ -31,6 +31,7 @@ export default function RootLayout({
             <li><Link href="/data-fetch">Data Fetch</Link></li>
             <li><Link href="/loading-demo">Loading</Link></li>
             <li><Link href="/error-demo">Error</Link></li>
+            <li><Link href="/server-action">Action</Link></li>
           </ul>
         </nav>
 

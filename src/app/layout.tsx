@@ -32,6 +32,7 @@ export default function RootLayout({
             <li><Link href="/loading-demo">Loading</Link></li>
             <li><Link href="/error-demo">Error</Link></li>
             <li><Link href="/server-action">Action</Link></li>
+            <li><Link href="/api-demo">API</Link></li>
           </ul>
         </nav>
 

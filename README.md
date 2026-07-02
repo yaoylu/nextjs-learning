@@ -2,6 +2,10 @@
 
 Learning Next.js from scratch — SSR, file-based routing, server/client components, data fetching strategies.
 
+**Live demo:** https://nextjs-learning.azurewebsites.net/
+
+**Source:** https://github.com/yaoylu/nextjs-learning
+
 ## Getting started
 
 ```bash

@@ -24,6 +24,10 @@ export default function RootLayout({
             <li><Link href="/">Home</Link></li>
             <li><Link href="/about">About</Link></li>
             <li><Link href="/blog">Blog</Link></li>
+            <li><Link href="/server-demo">Server</Link></li>
+            <li><Link href="/client-demo">Client</Link></li>
+            <li><Link href="/mixed-demo">Mixed</Link></li>
+            <li><Link href="/client-fetch">Client Fetch</Link></li>
           </ul>
         </nav>
 

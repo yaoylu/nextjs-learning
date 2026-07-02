@@ -29,6 +29,8 @@ export default function RootLayout({
             <li><Link href="/mixed-demo">Mixed</Link></li>
             <li><Link href="/client-fetch">Client Fetch</Link></li>
             <li><Link href="/data-fetch">Data Fetch</Link></li>
+            <li><Link href="/loading-demo">Loading</Link></li>
+            <li><Link href="/error-demo">Error</Link></li>
           </ul>
         </nav>
 

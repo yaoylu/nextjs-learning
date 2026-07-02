@@ -33,6 +33,7 @@ export default function RootLayout({
             <li><Link href="/error-demo">Error</Link></li>
             <li><Link href="/server-action">Action</Link></li>
             <li><Link href="/api-demo">API</Link></li>
+            <li><Link href="/protected">Protected</Link></li>
           </ul>
         </nav>
 
